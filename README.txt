@@ -1,18 +1,32 @@
-PROJECT SNAPSHOT IMAGE GUIDE
+CYRIL JOSE KNIFAHARAN — PORTFOLIO
 
-The homepage currently uses these five supplied project screenshots:
+Open index.html directly or preview the folder with VS Code Live Server.
+No installation, framework, dependency, or build process is required.
 
-1. shloak.webp
-2. staircase.webp
-3. muximus.webp
-4. advisorscoop.webp
-5. portage-holding.webp
+PROJECT SNAPSHOTS
+The five supplied snapshots are stored inside:
+assets/images/snapshots/
 
-You can replace any screenshot later while keeping the same filename.
-The homepage displays these as static images without a zoom viewer.
+Current filenames:
+- shloak.webp
+- staircase.webp
+- muximus.webp
+- advisorscoop.webp
+- portage-holding.webp
 
-Recommended preparation:
-- Export screenshots at 1600 px wide when possible.
-- Use WebP format and aim for less than 350 KB per image.
-- Remove or blur confidential data before publishing.
-- Landscape images work best. The Staircase slot can also support portrait imagery.
+Keep the filename if you replace an image. The homepage displays each snapshot
+as a static image without a zoom viewer.
+
+COMPLETED CASE STUDIES
+- pages/transvirtual.html
+- pages/qwqer.html
+- pages/advance-auto-parts.html
+- pages/staircase.html
+
+The case-study visuals use the supplied high-quality TransVirtual, QWQER,
+Advance Auto Parts, and Staircase screens, optimized as lightweight WebP
+images for the static site.
+
+BEFORE PUBLISHING
+- Add only project screenshots approved for public use.
+- Review case-study screenshots for any confidential or personally identifying data before publishing.

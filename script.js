@@ -79,6 +79,27 @@
   window.addEventListener('scroll', requestTimelineUpdate, { passive: true });
   window.addEventListener('resize', requestTimelineUpdate);
 
+  const precisePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+  if (!reduceMotion && precisePointer) {
+    document.querySelectorAll('.snapshot').forEach(snapshot => {
+      const media = snapshot.querySelector('.snapshot-media');
+      if (!media) return;
+
+      snapshot.addEventListener('pointermove', event => {
+        const rect = media.getBoundingClientRect();
+        const horizontal = (event.clientX - rect.left) / rect.width - 0.5;
+        const vertical = (event.clientY - rect.top) / rect.height - 0.5;
+        media.style.setProperty('--tilt-x', `${(-vertical * 2.4).toFixed(2)}deg`);
+        media.style.setProperty('--tilt-y', `${(horizontal * 2.8).toFixed(2)}deg`);
+      });
+
+      snapshot.addEventListener('pointerleave', () => {
+        media.style.setProperty('--tilt-x', '0deg');
+        media.style.setProperty('--tilt-y', '0deg');
+      });
+    });
+  }
+
   const year = document.querySelector('[data-year]');
   if (year) year.textContent = new Date().getFullYear();
 })();

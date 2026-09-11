@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Advance Auto Parts Cash Application platform case study by UX/UI Designer Cyril Jose Knifaharan.">
+  <meta name="theme-color" content="#f2efe5">
+  <title>Advance Auto Parts Case Study — Cyril Jose Knifaharan</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../css/case-study.css">
+</head>
+<body class="case-page advance">
+  <a class="skip-link" href="#case-main">Skip to case study</a>
+  <header class="case-header">
+    <nav class="case-nav shell" aria-label="Case study navigation">
+      <a class="brand" href="../index.html"><span>CJK</span><small>UX / UI DESIGN</small></a>
+      <div class="case-nav-links"><a href="#top">Overview</a><a href="../index.html#work">All work</a><a href="mailto:knifaharan@outlook.com">Email ↗</a></div>
+    </nav>
+  </header>
+
+  <main id="case-main">
+    <section class="case-hero shell" id="top" aria-labelledby="case-title">
+      <p class="case-kicker reveal"><span>Case study / 03</span><span>Financial operations</span></p>
+      <h1 id="case-title" class="reveal">Turning payment volume into <em>accountable work.</em></h1>
+      <div class="case-intro reveal">
+        <p class="case-intro-label">Advance Auto Parts</p>
+        <p class="case-summary">A net-new Cash Application experience that helps teams monitor incoming payment batches, assign ownership, and apply cash against customer invoices and credits.</p>
+        <dl class="case-meta">
+          <div><dt>Role</dt><dd>Lead UX UI Designer</dd></div>
+          <div><dt>Product</dt><dd>Cash Application platform</dd></div>
+          <div><dt>Focus</dt><dd>Payment operations</dd></div>
+          <div><dt>Scope</dt><dd>Requirements, UX and UI</dd></div>
+        </dl>
+      </div>
+      <figure class="case-hero-media reveal"><img src="../assets/images/case-studies/advance-dashboard.webp" alt="Advance Auto Parts Cash Application dashboard with payment totals, batch filters, ownership, and exception statuses"></figure>
+    </section>
+
+    <section class="case-section" aria-labelledby="advance-context-title">
+      <div class="shell case-grid">
+        <header class="case-rail reveal"><p>01 / Context</p><span>A new operational layer</span></header>
+        <div>
+          <div class="case-heading reveal"><h2 id="advance-context-title">A familiar system needed a <em>new financial workflow.</em></h2><p>SpeedBill already supported established business activity. Advance Auto Parts needed a dedicated way to manage the payment transactions flowing through its showroom network.</p></div>
+          <div class="case-body-copy reveal"><p>I designed the Cash Application experience from the ground up while keeping it visually and behaviorally connected to the existing product framework.</p><p>The core design problem was not simply displaying transactions. It was turning large payment batches into understandable, assignable work—and giving each assignee enough context to apply a payment accurately.</p></div>
+          <ul class="challenge-list reveal">
+            <li><span>01</span><strong>High-volume intake</strong><p>Payments arrived through different sources and needed one scannable operating view.</p></li>
+            <li><span>02</span><strong>Unclear ownership</strong><p>Batches had to be distributed to the right teammate without losing status or accountability.</p></li>
+            <li><span>03</span><strong>Financial exceptions</strong><p>Unapplied and unidentified amounts needed to remain visible instead of disappearing inside tables.</p></li>
+            <li><span>04</span><strong>Application risk</strong><p>Invoices, credits, balances, and cash status had to stay connected during a precise financial task.</p></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section" aria-labelledby="advance-model-title">
+      <div class="shell case-grid">
+        <header class="case-rail reveal"><p>02 / Product model</p><span>Requirements into structure</span></header>
+        <div>
+          <div class="case-heading reveal"><h2 id="advance-model-title">Design the work before designing <em>the screens.</em></h2><p>I translated the requirements into a shared workflow model so navigation, statuses, filters, and actions could follow the same operational logic.</p></div>
+          <div class="case-process reveal">
+            <article><span>01 / Frame</span><h3>Define the actors</h3><p>The experience separated team-level monitoring and assignment from the focused work completed by an individual assignee.</p></article>
+            <article><span>02 / Model</span><h3>Connect the records</h3><p>Batches, payments, customer accounts, invoices, credits, and balances were treated as one traceable system.</p></article>
+            <article><span>03 / Prioritize</span><h3>Surface exceptions</h3><p>Unapplied and unidentified amounts were elevated because they signal the work that still needs attention.</p></article>
+          </div>
+          <div class="artifact-note reveal"><strong>Requirement-based proto-personas</strong><p>Role profiles created from the supplied workflow and product requirements—not presented as research-validated personas.</p></div>
+          <div class="persona-grid reveal">
+            <article class="persona-card">
+              <div class="persona-head"><span class="persona-mark" aria-hidden="true">OL</span><div><p>Operations view</p><h3>Cash Application Lead</h3></div></div>
+              <p>Responsible for understanding daily payment volume, balancing work across the team, and keeping unresolved cash visible.</p>
+              <dl><div><dt>Primary goal</dt><dd>Keep payment batches moving with clear ownership.</dd></div><div><dt>Needs</dt><dd>Volume, status, assignees, and exception visibility.</dd></div><div><dt>Key actions</dt><dd>Monitor, filter, prioritize, and assign batches.</dd></div><div><dt>Main risk</dt><dd>Unresolved cash becoming hidden inside transaction volume.</dd></div></dl>
+            </article>
+            <article class="persona-card">
+              <div class="persona-head"><span class="persona-mark" aria-hidden="true">CS</span><div><p>Task view</p><h3>Application Specialist</h3></div></div>
+              <p>Works through assigned payments, identifies the correct customer records, and applies amounts against invoices and credits.</p>
+              <dl><div><dt>Primary goal</dt><dd>Apply each payment accurately and completely.</dd></div><div><dt>Needs</dt><dd>Customer context, records, balances, and cash status.</dd></div><div><dt>Key actions</dt><dd>Select, match, validate, comment, and submit.</dd></div><div><dt>Main risk</dt><dd>Applying money to the wrong record or leaving an imbalance.</dd></div></dl>
+            </article>
+          </div>
+          <div class="flow-chart reveal">
+            <div class="flow-chart-header"><span>End-to-end workflow</span><p>The product moves from team-level awareness into individual financial action, while preserving state between stages.</p></div>
+            <div class="flow-phases">
+              <article class="flow-phase"><span>01 / Intake</span><h3>Build the work queue</h3><ol><li>Payment source enters<small>System</small></li><li>Related payments form a batch<small>System</small></li></ol></article>
+              <article class="flow-phase"><span>02 / Assignment</span><h3>Create ownership</h3><ol><li>Lead reviews volume and exceptions<small>Application lead</small></li><li>Batch is assigned to a teammate<small>Application lead</small></li></ol></article>
+              <article class="flow-phase"><span>03 / Application</span><h3>Match the payment</h3><ol><li>Customer invoices and credits are reviewed<small>Specialist</small></li><li>Amounts are selected and validated<small>Specialist</small></li></ol></article>
+              <article class="flow-phase"><span>04 / Resolution</span><h3>Complete or escalate</h3><ol><li>Balanced payment is submitted<small>Specialist</small></li><li>Remaining exceptions stay visible<small>System + team</small></li></ol></article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section" aria-labelledby="advance-design-title">
+      <div class="shell case-grid">
+        <header class="case-rail reveal"><p>03 / Design response</p><span>Control without clutter</span></header>
+        <div>
+          <div class="case-heading reveal"><h2 id="advance-design-title">Three connected views. One <em>continuous task.</em></h2><p>The interface moves from operational awareness to ownership and then into careful payment application, without forcing users to rebuild context at each step.</p></div>
+          <div class="design-moves reveal">
+            <article class="design-move"><span>01</span><h3>Operational dashboard</h3><p>Summary cards and a structured batch table reveal payment volume, unresolved amounts, assignment, and current status at a glance.</p></article>
+            <article class="design-move"><span>02</span><h3>Assignable work queue</h3><p>Assignee and batch views support different mental models while filters and summaries keep workload ownership visible.</p></article>
+            <article class="design-move"><span>03</span><h3>Guarded application</h3><p>Payment context, selectable invoices and credits, running totals, cash status, and the final submit action remain in one workspace.</p></article>
+            <article class="design-move"><span>04</span><h3>System continuity</h3><p>Existing SpeedBill navigation, spacing, tables, controls, and brand cues were reused so the new module felt native to the wider product.</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section" aria-labelledby="advance-outcome-title">
+      <div class="shell case-grid">
+        <header class="case-rail reveal"><p>04 / Final experience</p><span>From overview to action</span></header>
+        <div>
+          <div class="case-heading reveal"><h2 id="advance-outcome-title">A financial workspace built for <em>clarity and control.</em></h2><p>The delivered direction establishes a single operating path for understanding payment volume, distributing work, and completing the application task.</p></div>
+          <div class="outcome-grid reveal">
+            <article><span>01 / Awareness</span><strong>One overview</strong><p>Batch volume, payment value, and unresolved amounts share one decision surface.</p></article>
+            <article><span>02 / Ownership</span><strong>Clear assignment</strong><p>Each batch can be connected to a responsible teammate and tracked by status.</p></article>
+            <article><span>03 / Exceptions</span><strong>Visible risk</strong><p>Unapplied and unidentified amounts remain prominent throughout the workflow.</p></article>
+            <article><span>04 / Accuracy</span><strong>Controlled action</strong><p>Invoices, credits, totals, and submission controls stay together during payment application.</p></article>
+          </div>
+          <div class="case-gallery-block reveal">
+            <div class="case-gallery-heading"><span>Final interface system</span><p>Three connected views covering monitoring, assignment, and detailed payment application.</p></div>
+            <div class="case-gallery">
+              <figure class="case-shot case-shot-wide"><div><img src="../assets/images/case-studies/advance-dashboard.webp" alt="Cash Application dashboard showing operational totals, filters, batch records, and assignees" loading="lazy"></div><figcaption><span>01</span><strong>Operational dashboard</strong></figcaption></figure>
+              <figure class="case-shot"><div><img src="../assets/images/case-studies/advance-assignee-view.webp" alt="Cash Application assignee view with payment batches and teammate workload summary" loading="lazy"></div><figcaption><span>02</span><strong>Assignment workspace</strong></figcaption></figure>
+              <figure class="case-shot"><div><img src="../assets/images/case-studies/advance-payment-application.webp" alt="Payment Application workspace for selecting invoices and credits and submitting an applied payment" loading="lazy"></div><figcaption><span>03</span><strong>Payment application</strong></figcaption></figure>
+            </div>
+          </div>
+          <div class="case-reflection reveal"><h3>For financial tools, confidence comes from visible state.</h3><p>The design keeps ownership, exceptions, balances, and the effect of an action in view. That continuity is what allows a dense enterprise workflow to feel controlled rather than overwhelming.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-explore" aria-labelledby="other-work-title">
+      <div class="shell">
+        <div class="case-explore-head"><span>Continue exploring</span><h2 id="other-work-title">Other case studies</h2></div>
+        <nav class="case-card-grid" aria-label="Other case studies">
+          <a class="case-card case-card-tv" href="transvirtual.html"><span>01 / Logistics SaaS</span><strong>TransVirtual</strong><p>Operational clarity for complex logistics work.</p><i aria-hidden="true">↗</i></a>
+          <a class="case-card case-card-qwqer" href="qwqer.html"><span>02 / Delivery platform</span><strong>QWQER</strong><p>Confidence and momentum for delivery partners.</p><i aria-hidden="true">↗</i></a>
+          <a class="case-card case-card-staircase" href="staircase.html"><span>04 / Mentorship</span><strong>Staircase</strong><p>Mentor discovery, booking, and continuity.</p><i aria-hidden="true">↗</i></a>
+        </nav>
+      </div>
+    </section>
+  </main>
+
+  <footer class="case-footer shell"><p>© <span data-year></span> Cyril Jose Knifaharan</p><a href="../index.html">Return home ↑</a></footer>
+  <script src="../script.js" defer></script>
+</body>
+</html>
